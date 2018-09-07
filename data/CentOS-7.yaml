@@ -1,0 +1,113 @@
+---
+yum::repositories:
+  base:
+    ensure: present
+    descr: CentOS-$releasever - Base
+    enabled: 1
+    mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+    baseurl: absent
+#    baseurl: http://mirror.centos.org/centos/$releasever/os/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#released updates
+  updates:
+    ensure: present
+    descr: CentOS-$releasever - Updates
+    enabled: 1
+    mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+    baseurl: absent
+#    baseurl: http://mirror.centos.org/centos/$releasever/updates/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that may be useful
+  extras:
+    ensure: present
+    descr: CentOS-$releasever - Extras
+    enabled: 1
+    mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+    baseurl: absent
+#    baseurl: http://mirror.centos.org/centos/$releasever/extras/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that extend functionality of existing packages
+  centosplus:
+    ensure: present
+    descr: CentOS-$releasever - Plus
+    enabled: 0
+    mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
+    baseurl: absent
+#    baseurl: http://mirror.centos.org/centos/$releasever/centosplus/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  cr:
+    ensure: present
+    descr: CentOS-$releasever - cr
+    enabled: 0
+    baseurl: http://mirror.centos.org/centos/$releasever/cr/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  base-debuginfo:
+    ensure: present
+    descr: CentOS-7 - Debuginfo
+    enabled: 0
+    baseurl: http://debuginfo.centos.org/7/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-Debug-7
+
+  fasttrack:
+    ensure: present
+    descr: CentOS-7 - fasttrack
+    enabled: 0
+    mirrorlist: http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=fasttrack&infra=$infra
+    baseurl: absent
+#    baseurl: http://mirror.centos.org/centos/$releasever/fasttrack/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  c7-media:
+    ensure: present
+    descr: CentOS-$releasever - Media
+    enabled: 0
+    baseurl: "file:///media/CentOS/\n    file:///media/cdrom/\n    file:///media/cdrecorder/"
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  base-source:
+    ensure: present
+    descr: CentOS-$releasever - Base Sources
+    enabled: 0
+    baseurl: http://vault.centos.org/centos/$releasever/os/Source/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#released updates 
+  updates-source:
+    ensure: present
+    descr: CentOS-$releasever - Updates Sources
+    enabled: 0
+    baseurl: http://vault.centos.org/centos/$releasever/updates/Source/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that may be useful
+  extras-source:
+    ensure: present
+    descr: CentOS-$releasever - Extras Sources
+    enabled: 0
+    baseurl: http://vault.centos.org/centos/$releasever/extras/Source/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+#additional packages that extend functionality of existing packages
+  centosplus-source:
+    ensure: present
+    descr: CentOS-$releasever - Plus Sources
+    enabled: 0
+    baseurl: http://vault.centos.org/centos/$releasever/centosplus/Source/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7

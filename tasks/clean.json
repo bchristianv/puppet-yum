@@ -1,0 +1,15 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "Clean the various type of yum caches",
+  "parameters": {
+    "cache_type": {
+      "decsription": "The type of yum cache to perform the clean operation on",
+      "type": "Enum[all, dbcache, expire_cache, headers, packages, plugins, metadata, rpmdb]"
+    },
+    "clean_disabled_repos": {
+      "description": "Also clean any (temporarily) disabled repositories",
+      "type": "Optional[Boolean]"
+    }
+  }
+}

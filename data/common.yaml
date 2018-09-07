@@ -1,0 +1,4 @@
+---
+lookup_options:
+  yum::repositories:
+    merge: 'hash'

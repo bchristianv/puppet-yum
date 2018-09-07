@@ -1,0 +1,206 @@
+---
+yum::repositories:
+#c7.0.1406
+  C7.0.1406-base:
+    ensure: present
+    descr: CentOS-7.0.1406 - Base
+    enabled: 0
+    baseurl: http://vault.centos.org/7.0.1406/os/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.0.1406-updates:
+    ensure: present
+    descr: CentOS-7.0.1406 - Updates
+    enabled: 0
+    baseurl: http://vault.centos.org/7.0.1406/updates/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.0.1406-extras:
+    ensure: present
+    descr: CentOS-7.0.1406 - Extras
+    enabled: 0
+    baseurl: http://vault.centos.org/7.0.1406/extras/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.0.1406-centosplus:
+    ensure: present
+    descr: CentOS-7.0.1406 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.0.1406/centosplus/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.0.1406-fasttrack:
+    ensure: present
+    descr: CentOS-7.0.1406 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.0.1406/fasttrack/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+# C7.1.1503
+  C7.1.1503-base:
+    ensure: present
+    descr: CentOS-7.1.1503 - Base
+    enabled: 0
+    baseurl: http://vault.centos.org/7.1.1503/os/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.1.1503-updates:
+    ensure: present
+    descr: CentOS-7.1.1503 - Updates
+    enabled: 0
+    baseurl: http://vault.centos.org/7.1.1503/updates/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.1.1503-extras:
+    ensure: present
+    descr: CentOS-7.1.1503 - Extras
+    enabled: 0
+    baseurl: http://vault.centos.org/7.1.1503/extras/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.1.1503-centosplus:
+    ensure: present
+    descr: CentOS-7.1.1503 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.1.1503/centosplus/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.1.1503-fasttrack:
+    ensure: present
+    descr: CentOS-7.1.1503 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.1.1503/fasttrack/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+# C7.2.1511
+  C7.2.1511-base:
+    ensure: present
+    descr: CentOS-7.2.1511 - Base
+    enabled: 0
+    baseurl: http://vault.centos.org/7.2.1511/os/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.2.1511-updates:
+    ensure: present
+    descr: CentOS-7.2.1511 - Updates
+    enabled: 0
+    baseurl: http://vault.centos.org/7.2.1511/updates/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.2.1511-extras:
+    ensure: present
+    descr: CentOS-7.2.1511 - Extras
+    enabled: 0
+    baseurl: http://vault.centos.org/7.2.1511/extras/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.2.1511-centosplus:
+    ensure: present
+    descr: CentOS-7.2.1511 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.2.1511/centosplus/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.2.1511-fasttrack:
+    ensure: present
+    descr: CentOS-7.2.1511 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.2.1511/fasttrack/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+# C7.3.1611
+  C7.3.1611-base:
+    ensure: present
+    descr: CentOS-7.3.1611 - Base
+    enabled: 0
+    baseurl: http://vault.centos.org/7.3.1611/os/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.3.1611-updates:
+    ensure: present
+    descr: CentOS-7.3.1611 - Updates
+    enabled: 0
+    baseurl: http://vault.centos.org/7.3.1611/updates/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.3.1611-extras:
+    ensure: present
+    descr: CentOS-7.3.1611 - Extras
+    enabled: 0
+    baseurl: http://vault.centos.org/7.3.1611/extras/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.3.1611-centosplus:
+    ensure: present
+    descr: CentOS-7.3.1611 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.3.1611/centosplus/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.3.1611-fasttrack:
+    ensure: present
+    descr: CentOS-7.3.1611 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.3.1611/fasttrack/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+# C7.4.1708
+  C7.4.1708-base:
+    ensure: present
+    descr: CentOS-7.4.1708 - Base
+    enabled: 0
+    baseurl: http://vault.centos.org/7.4.1708/os/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.4.1708-updates:
+    ensure: present
+    descr: CentOS-7.4.1708 - Updates
+    enabled: 0
+    baseurl: http://vault.centos.org/7.4.1708/updates/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.4.1708-extras:
+    ensure: present
+    descr: CentOS-7.4.1708 - Extras
+    enabled: 0
+    baseurl: http://vault.centos.org/7.4.1708/extras/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.4.1708-centosplus:
+    ensure: present
+    descr: CentOS-7.4.1708 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.4.1708/centosplus/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+  C7.4.1708-fasttrack:
+    ensure: present
+    descr: CentOS-7.4.1708 - CentOSPlus
+    enabled: 0
+    baseurl: http://vault.centos.org/7.4.1708/fasttrack/$basearch/
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7

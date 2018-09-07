@@ -1,0 +1,67 @@
+---
+yum::repositories:
+  epel:
+    ensure: present
+    descr: Extra Packages for Enterprise Linux 7 - $basearch
+    enabled: 1
+    metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
+    baseurl: absent
+#    baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch
+    failovermethod: priority
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+  epel-debuginfo:
+    ensure: present
+    descr: Extra Packages for Enterprise Linux 7 - $basearch - Debug
+    enabled: 0
+    metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&arch=$basearch
+    baseurl: absent
+#    baseurl: http://download.fedoraproject.org/pub/epel/7/$basearch/debug
+    failovermethod: priority
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+  epel-source:
+    ensure: present
+    descr: Extra Packages for Enterprise Linux 7 - $basearch - Source
+    enabled: 0
+    metalink: https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&arch=$basearch
+    baseurl: absent
+#    baseurl: http://download.fedoraproject.org/pub/epel/7/SRPMS
+    failovermethod: priority
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+  epel-testing:
+    ensure: present
+    descr: Extra Packages for Enterprise Linux 7 - Testing - $basearch
+    enabled: 0
+    metalink: https://mirrors.fedoraproject.org/metalink?repo=testing-epel7&arch=$basearch
+    baseurl: absent
+#    baseurl: http://download.fedoraproject.org/pub/epel/testing/7/$basearch
+    failovermethod: priority
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+  epel-testing-debuginfo:
+    ensure: present
+    descr: Extra Packages for Enterprise Linux 7 - Testing - $basearch - Debug
+    enabled: 0
+    metalink: https://mirrors.fedoraproject.org/metalink?repo=testing-debug-epel7&arch=$basearch
+    baseurl: absent
+#    baseurl: http://download.fedoraproject.org/pub/epel/testing/7/$basearch/debug
+    failovermethod: priority
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+
+  epel-testing-source:
+    ensure: present
+    descr: Extra Packages for Enterprise Linux 7 - Testing - $basearch - Source
+    enabled: 0
+    metalink: https://mirrors.fedoraproject.org/metalink?repo=testing-source-epel7&arch=$basearch
+    baseurl: absent
+#    baseurl: http://download.fedoraproject.org/pub/epel/testing/7/SRPMS
+    failovermethod: priority
+    gpgcheck: 1
+    gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7

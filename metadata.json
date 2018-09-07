@@ -1,0 +1,34 @@
+{
+  "name": "bchristianv-yum",
+  "version": "0.1.0",
+  "author": "bchristianv",
+  "summary": "Manage YUM configuration and repositories, with yum tasks",
+  "license": "Apache-2.0",
+  "source": "https://github.com/bchristianv/puppet-yum",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.7.0 < 6.0.0"
+    }
+  ],
+  "pdk-version": "1.7.0",
+  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
+  "template-ref": "1.7.0-0-g57412ed"
+}

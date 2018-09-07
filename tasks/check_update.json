@@ -1,0 +1,11 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "Check if any updates are available to be applied",
+  "parameters": {
+    "show_obsoletes": {
+      "description": "Show obsoletes, if any",
+      "type": "Optional[Boolean]"
+    }
+  }
+}

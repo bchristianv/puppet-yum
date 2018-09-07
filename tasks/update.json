@@ -1,0 +1,11 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "Update installed package(s)",
+  "parameters": {
+    "package": {
+      "description": "Update package(s) by name or glob - see 'package' task",
+      "type": "Optional[String[1]]"
+    }
+  }
+}

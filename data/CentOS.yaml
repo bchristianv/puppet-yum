@@ -1,0 +1,3 @@
+---
+yum::config::installonly_limit: 5
+yum::config::distroverpkg: centos-release

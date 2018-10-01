@@ -1,6 +1,6 @@
 ---
 yum::repositories:
-#c7.0.1406
+#C7.0.1406
   C7.0.1406-base:
     ensure: present
     descr: CentOS-7.0.1406 - Base

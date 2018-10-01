@@ -1,4 +1,5 @@
 ---
+yum::config::bugtracker_url: http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_report_page.php?category=yum
 yum::repositories:
   base:
     ensure: present

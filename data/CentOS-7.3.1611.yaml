@@ -1,6 +1,6 @@
 ---
 yum::repositories:
-#c7.0.1406
+#C7.0.1406
   C7.0.1406-base:
     ensure: present
     descr: CentOS-7.0.1406 - Base
@@ -41,7 +41,7 @@ yum::repositories:
     gpgcheck: 1
     gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
-# C7.1.1503
+#C7.1.1503
   C7.1.1503-base:
     ensure: present
     descr: CentOS-7.1.1503 - Base
@@ -82,7 +82,7 @@ yum::repositories:
     gpgcheck: 1
     gpgkey: file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
-# C7.2.1511
+#C7.2.1511
   C7.2.1511-base:
     ensure: present
     descr: CentOS-7.2.1511 - Base

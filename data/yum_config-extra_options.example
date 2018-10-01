@@ -1,0 +1,30 @@
+#
+# The yum::config::extra_options hash is for passing in additional
+# yum configuration options that don't have class parameters defined.
+# I.e. yum configuration parameters that are not included in a default
+# yum.conf file.
+#
+# An example using the yum::config class extra_options hash:
+# - each key represents a section of the yum.conf
+# - each hash value represents a key=value pair of the section
+#
+# See man yum.conf(5) for further information regarding the yum.conf
+# sections and available options for each section.
+---
+yum::config::extra_options:
+  docker-ce-stable:
+    ensure: present
+    desc: Docker CE Stable - $basearch
+    enabled: 1
+    baseurl: https://download.docker.com/linux/centos/7/$basearch/stable
+    gpgcheck=1
+    gpgkey=https://download.docker.com/linux/centos/gpg
+  main:
+    reposdir: /etc/yum.repos.d
+    retries: 5
+  kubernetes-1.10:
+    ensure: present
+    desc: Kubernetes 1.10
+    enabled: 0
+    baseurl: https://mirrors.edge.kernel.org/centos/$releasever/virt/$basearch/kubernetes110/
+    gpgcheck=0

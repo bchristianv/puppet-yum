@@ -45,13 +45,16 @@ class yum (
   Hash $repositories = {}
 ){
 
+  include yum::config
+
   if $yumrepos_before_packages {
     Yumrepo <| |> -> Package <| provider == 'yum' |>
   }
 
   $repositories.each |String $repository, Hash $repository_params| {
     yumrepo { $repository:
-      * => $repository_params,
+      *       => $repository_params,
+      require => Class['yum::config'],
     }
   }
 

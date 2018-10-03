@@ -27,4 +27,3 @@ else
     echo "'yum clean ${yum_cache}' completed successfully."
   fi
 fi
-

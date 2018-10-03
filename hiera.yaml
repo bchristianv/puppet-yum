@@ -9,9 +9,6 @@ defaults:
   # datadir: data
   # data_hash: yaml_data
 hierarchy:
-  - name: 'Node-specific data'
-    path: 'nodes/%{::clientcert}.yaml'
-
   - name: 'Full Version'
     path: '%{facts.os.name}-%{facts.os.release.full}.yaml'
 

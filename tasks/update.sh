@@ -12,4 +12,3 @@ if [[ $PT_package ]]; then
 else
   $YUM_CMD --assumeyes update
 fi
-

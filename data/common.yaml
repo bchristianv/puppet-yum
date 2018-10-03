@@ -3,7 +3,7 @@ lookup_options:
   yum::repositories:
     merge: 'hash'
 yum::config::cachedir: /var/cache/yum/$basearch/$releasever
-yum::config::keepcache: '1'
+yum::config::keepcache: '0'
 yum::config::debuglevel: '2'
 yum::config::logfile: /var/log/yum.log
 yum::config::exactarch: '1'

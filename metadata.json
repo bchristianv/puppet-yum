@@ -1,6 +1,6 @@
 {
   "name": "bchristianv-yum",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "bchristianv",
   "summary": "Manage YUM configuration and repositories, with yum tasks",
   "license": "Apache-2.0",

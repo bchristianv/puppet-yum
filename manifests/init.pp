@@ -48,7 +48,25 @@ class yum (
   include yum::config
 
   if $yumrepos_before_packages {
-    Yumrepo <| |> -> Package <| provider == 'yum' |>
+    Yumrepo <| |> -> Package <| provider != 'rpm' and
+      title != 'pe-activemq' and
+      title != 'pe-backup-tools' and
+      title != 'pe-client-tools' and
+      title != 'pe-console-services' and
+      title != 'pe-console-services-termini' and
+      title != 'pe-java' and
+      title != 'pe-java-devel' and
+      title != 'pe-license' and
+      title != 'pe-modules' and
+      title != 'pe-orchestration-services' and
+      title != 'pe-postgresql-pglogical' and
+      title != 'pe-puppet-enterprise-release' and
+      title != 'pe-puppetdb' and
+      title != 'pe-puppetdb-termini' and
+      title != 'pe-puppetserver' and
+      title != 'pe-razor-libs' and
+      title != 'pe-razor-server' and
+      title != 'pe-tasks' |>
   }
 
   $repositories.each |String $repository, Hash $repository_params| {

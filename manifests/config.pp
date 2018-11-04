@@ -67,10 +67,10 @@ class yum::config (
   }
 
   file { '/etc/yum.repos.d':
-    ensure   => directory,
-    group    => '0',
-    mode     => '0755',
-    owner    => '0',
+    ensure => directory,
+    group  => '0',
+    mode   => '0755',
+    owner  => '0',
   }
 
 }

@@ -19,7 +19,7 @@ The yum module configures the Yellowdog Update Manager utility and yum repositor
 
 ### Setup Requirements
 
-puppetlabs/stdlib >= 4.13.0
+puppetlabs/stdlib >= 6.0.0
 
 ### Beginning with yum
 
@@ -77,7 +77,7 @@ They should still use the original configuration files for default OS repositori
 
 ## Development
 
-* Clone https://github.com/bchristianv/puppet-yum.git
+* Clone https://github.com/bchristianv/puppet_mod-yum.git
 * Make your changes in a working branch and test them
 * `git` add/commit/push
 * Submit a pull request with any supporting comments for review.

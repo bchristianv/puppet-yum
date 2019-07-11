@@ -1,6 +1,6 @@
 {
   "name": "bchristianv-yum",
-  "version": "0.5.2",
+  "version": "1.0.0",
   "author": "bchristianv",
   "summary": "Manage YUM configuration and repositories, with yum tasks",
   "license": "Apache-2.0",
@@ -31,7 +31,7 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
-  "pdk-version": "1.7.1",
-  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
-  "template-ref": "1.7.1-0-g810b982"
+  "pdk-version": "1.11.1",
+  "template-url": "pdk-default#1.11.1",
+  "template-ref": "1.11.1-0-g2ff8c24"
 }

@@ -35,7 +35,7 @@ yum::repositories:
 
   C7.0.1406-fasttrack:
     ensure: present
-    descr: CentOS-7.0.1406 - CentOSPlus
+    descr: CentOS-7.0.1406 - Fasttrack
     enabled: 0
     baseurl: http://vault.centos.org/7.0.1406/fasttrack/$basearch/
     gpgcheck: 1
@@ -76,7 +76,7 @@ yum::repositories:
 
   C7.1.1503-fasttrack:
     ensure: present
-    descr: CentOS-7.1.1503 - CentOSPlus
+    descr: CentOS-7.1.1503 - Fasttrack
     enabled: 0
     baseurl: http://vault.centos.org/7.1.1503/fasttrack/$basearch/
     gpgcheck: 1
@@ -117,7 +117,7 @@ yum::repositories:
 
   C7.2.1511-fasttrack:
     ensure: present
-    descr: CentOS-7.2.1511 - CentOSPlus
+    descr: CentOS-7.2.1511 - Fasttrack
     enabled: 0
     baseurl: http://vault.centos.org/7.2.1511/fasttrack/$basearch/
     gpgcheck: 1
@@ -158,7 +158,7 @@ yum::repositories:
 
   C7.3.1611-fasttrack:
     ensure: present
-    descr: CentOS-7.3.1611 - CentOSPlus
+    descr: CentOS-7.3.1611 - Fasttrack
     enabled: 0
     baseurl: http://vault.centos.org/7.3.1611/fasttrack/$basearch/
     gpgcheck: 1
@@ -199,7 +199,7 @@ yum::repositories:
 
   C7.4.1708-fasttrack:
     ensure: present
-    descr: CentOS-7.4.1708 - CentOSPlus
+    descr: CentOS-7.4.1708 - Fasttrack
     enabled: 0
     baseurl: http://vault.centos.org/7.4.1708/fasttrack/$basearch/
     gpgcheck: 1
